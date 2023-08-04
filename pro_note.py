@@ -29,7 +29,6 @@ class Notepad(tk.Tk):
 
     def new_file(self):
         self.tx.delete("1.0", "end")
-        self.title("Notepad")
 
     def open_file(self):
         file = fd.askopenfile(parent=self, mode="rb", title="Open a file")
